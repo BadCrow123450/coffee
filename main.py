@@ -40,7 +40,7 @@ template = """<?xml version="1.0" encoding="UTF-8"?>
 
 class TableOfTypesCoffees(QtWidgets.QMainWindow):
     def __init__(self):
-        super().__init__()
+        super().__init__()   # q
         file = io.StringIO(template)
         uic.loadUi(file, self)
         connect = sqlite3.connect('coffee.sqlite')
@@ -58,5 +58,5 @@ class TableOfTypesCoffees(QtWidgets.QMainWindow):
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     window = TableOfTypesCoffees()
-    window.show()
+    window.show()   # q
     sys.exit(app.exec())

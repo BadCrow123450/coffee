@@ -58,5 +58,5 @@ class TableOfTypesCoffees(QtWidgets.QMainWindow):
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     window = TableOfTypesCoffees()
-    window.show()   # q q
+    window.show()   # q q j
     sys.exit(app.exec())

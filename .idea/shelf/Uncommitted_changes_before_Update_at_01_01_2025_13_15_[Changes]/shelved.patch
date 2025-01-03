@@ -1,0 +1,18 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from PyQt6 import QtWidgets, uic\r\nimport io\r\nimport sys\r\nimport sqlite3\r\n\r\n\r\ntemplate = \"\"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ui version=\"4.0\">\r\n <class>MainWindow</class>\r\n <widget class=\"QMainWindow\" name=\"MainWindow\">\r\n  <property name=\"geometry\">\r\n   <rect>\r\n    <x>0</x>\r\n    <y>0</y>\r\n    <width>773</width>\r\n    <height>600</height>\r\n   </rect>\r\n  </property>\r\n  <property name=\"windowTitle\">\r\n   <string>MainWindow</string>\r\n  </property>\r\n  <widget class=\"QWidget\" name=\"centralwidget\">\r\n   <widget class=\"QTableWidget\" name=\"tableWidget\">\r\n    <property name=\"geometry\">\r\n     <rect>\r\n      <x>110</x>\r\n      <y>90</y>\r\n      <width>571</width>\r\n      <height>421</height>\r\n     </rect>\r\n    </property>\r\n   </widget>\r\n  </widget>\r\n  <widget class=\"QStatusBar\" name=\"statusbar\"/>\r\n </widget>\r\n <resources/>\r\n <connections/>\r\n</ui>\r\n\"\"\"\r\n\r\nclass TableOfTypesCoffees(QtWidgets.QMainWindow):\r\n    def __init__(self):\r\n        super().__init__()   # q\r\n        file = io.StringIO(template)\r\n        uic.loadUi(file, self)\r\n        connect = sqlite3.connect('coffee.sqlite')\r\n        cursor = connect.cursor()\r\n        all_info = cursor.execute('SELECT * FROM coffee_characteristic')\r\n        all_info = [el for el in all_info]\r\n        self.tableWidget.setRowCount(len(all_info))\r\n        self.tableWidget.setColumnCount(7)\r\n        for i in range(len(all_info)):\r\n            for j in range(7):\r\n                self.tableWidget.setItem(i, j, QtWidgets.QTableWidgetItem(str(all_info[i][j])))\r\n\r\n\r\n\r\nif __name__ == '__main__':\r\n    app = QtWidgets.QApplication(sys.argv)\r\n    window = TableOfTypesCoffees()\r\n    window.show()   # q\r\n    sys.exit(app.exec())
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 9f4fcb8d4b996e89cb91cda82bc262820f1de529)
++++ b/main.py	(date 1735719175488)
+@@ -58,5 +58,5 @@
+ if __name__ == '__main__':
+     app = QtWidgets.QApplication(sys.argv)
+     window = TableOfTypesCoffees()
+-    window.show()   # q
++    window.show()
+     sys.exit(app.exec())
+\ No newline at end of file

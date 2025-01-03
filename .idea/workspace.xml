@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b58d1b-03e6-478c-8bed-9f06d8a4c6cf" name="Changes" comment="added requirements.txt">
-      <change afterPath="$PROJECT_DIR$/addd.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editt.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/coffee.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main.ui" afterDir="false" />
+    <list default="true" id="38b58d1b-03e6-478c-8bed-9f06d8a4c6cf" name="Changes" comment="добавлена возможность добавлять записки и изменять ячейки">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addEditCoffeeForm.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addd.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.ui" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +55,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainq.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/YROSLAV_P/PycharmProjects/gitt&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainq.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/YROSLAV_P/PycharmProjects/gitt",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\YROSLAV_P\PycharmProjects\gitt" />
@@ -281,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735720583910</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="добавлена возможность добавлять записки и изменять ячейки">
+      <option name="closed" value="true" />
+      <created>1735890536808</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735890536808</updated>
+    </task>
+    <task id="LOCAL-00017" summary="добавлена возможность добавлять записки и изменять ячейки">
+      <option name="closed" value="true" />
+      <created>1735890683652</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735890683652</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +327,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt" />
+    <MESSAGE value="добавлена возможность добавлять записки и изменять ячейки" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена возможность добавлять записки и изменять ячейки" />
   </component>
 </project>
